@@ -1,0 +1,252 @@
+.about-section {
+  background-color: var(--dark-bg);
+  position: relative;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xl);
+  margin-bottom: var(--spacing-xl);
+}
+
+.about-image {
+  flex: 1;
+  position: relative;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: var(--border-radius);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  border: 4px solid var(--dark-surface);
+}
+
+.experience-badge {
+  position: absolute;
+  bottom: -30px;
+  right: -30px;
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 700;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.experience-badge .years {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.experience-badge .text {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.about-content {
+  flex: 1;
+}
+
+.about-subtitle {
+  font-size: 1.8rem;
+  margin-bottom: var(--spacing-sm);
+  font-weight: 700;
+}
+
+.about-text {
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-md);
+  font-size: 1.05rem;
+}
+
+.about-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.feature-icon {
+  min-width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-circle {
+  width: 16px;
+  height: 16px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  border-radius: 50%;
+  position: relative;
+}
+
+.feature-circle::before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 2px solid var(--primary);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.feature-content h4 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.feature-content p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.about-metrics {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-md);
+  padding: var(--spacing-md) 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.metric-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 5px;
+}
+
+.metric-label {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.about-btn {
+  margin-top: var(--spacing-md);
+}
+
+.mission-vision {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-lg);
+}
+
+.mission, .vision {
+  padding: var(--spacing-lg);
+  text-align: center;
+  background-color: var(--dark-card);
+  transition: var(--transition);
+}
+
+.mission:hover, .vision:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.mission h3, .vision h3 {
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-sm);
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.mission h3::after, .vision h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  border-radius: 2px;
+}
+
+.mission p, .vision p {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .about-container {
+    flex-direction: column;
+    gap: var(--spacing-lg);
+  }
+  
+  .about-image {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .experience-badge {
+    bottom: -20px;
+    right: 30px;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .experience-badge .years {
+    font-size: 2rem;
+  }
+  
+  .experience-badge .text {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-features {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+  }
+  
+  .about-subtitle {
+    font-size: 1.5rem;
+  }
+  
+  .feature-icon {
+    min-width: 30px;
+  }
+  
+  .mission-vision {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+  
+  .about-metrics {
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+  
+  .metric {
+    margin-bottom: var(--spacing-sm);
+  }
+}
