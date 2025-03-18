@@ -5,7 +5,7 @@ import Navbar from './components/Navbar/Navbar.jsx';
 import Hero from './components/Hero/Hero.jsx';
 import About from './components/About/About.jsx';
 import Services from './components/Services/Services.jsx';
-import Projects from './components/Projects/Projects.jsx';
+import Courses from './components/Courses/Courses.jsx';
 import Team from './components/Team/Team.jsx';
 import Contact from './components/Contact/Contact.jsx';
 import Footer from './components/Footer/Footer.jsx';
@@ -17,7 +17,7 @@ function App() {
       <Hero />
       <About />
       <Services />
-      <Projects />
+      <Courses />
       <Team />
       <Contact />
       <Footer />
