@@ -18,13 +18,13 @@ const About = () => {
             {/* Replace with your actual image path */}
             <img src={aboutImage} alt="About Techzistors" />
             <div className="experience-badge">
-              <span className="years">10+</span>
+              <span className="years">2+</span>
               <span className="text">Years<br />Experience</span>
             </div>
           </div>
           
           <div className="about-content">
-            <h3 className="about-subtitle">Leading Tech Innovation Since 2012</h3>
+            <h3 className="about-subtitle">Leading Tech Innovation Since 2023</h3>
             <p className="about-text">
               Techzistors was founded with a vision to revolutionize how businesses interact with technology. 
               We're a team of passionate innovators, developers, and designers committed to delivering 
@@ -80,11 +80,11 @@ const About = () => {
             
             <div className="about-metrics">
               <div className="metric">
-                <span className="metric-number">200+</span>
+                <span className="metric-number">100+</span>
                 <span className="metric-label">Projects Completed</span>
               </div>
               <div className="metric">
-                <span className="metric-number">50+</span>
+                <span className="metric-number">20+</span>
                 <span className="metric-label">Expert Team Members</span>
               </div>
               <div className="metric">
@@ -92,8 +92,6 @@ const About = () => {
                 <span className="metric-label">Client Satisfaction</span>
               </div>
             </div>
-            
-            <button className="btn about-btn">Explore Our Story</button>
           </div>
         </div>
         

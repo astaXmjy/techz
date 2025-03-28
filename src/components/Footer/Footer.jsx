@@ -28,11 +28,11 @@ const Footer = () => {
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#team">Team</a></li>
+                {/* <li><a href="#team">Team</a></li> */}
                 <li><a href="#contact">Contact</a></li>
               </ul>
             </div>
-            
+
             <div className="footer-services">
               <h3>Our Services</h3>
               <ul>
@@ -60,11 +60,11 @@ const Footer = () => {
       <div className="footer-bottom">
         <div className="container">
           <p>&copy; {new Date().getFullYear()} Techzistors. All Rights Reserved.</p>
-          <div className="footer-bottom-links">
+          {/* <div className="footer-bottom-links">
             <a href="#">Privacy Policy</a>
             <a href="#">Terms of Service</a>
             <a href="#">Cookies Policy</a>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

@@ -3,6 +3,10 @@ import './Hero.css';
 import heroImage from '../../assets/images/hero/hero-main.png';
 
 const Hero = () => {
+  const handleGetStarted = () => {
+    window.open('https://docs.google.com/forms/d/e/1FAIpQLSeuum4IQWfUMNuSeKKXUengV6A0yfTrFxfsu2DP7JQPi8jCqQ/viewform', '_blank');
+  };
+
   return (
     <section id="home" className="hero-section">
       <div className="hero-overlay"></div>
@@ -15,7 +19,7 @@ const Hero = () => {
             We provide cutting-edge technology solutions to help businesses thrive in the digital era
           </p>
           <div className="hero-buttons">
-            <button className="btn hero-btn-primary">Get Started</button>
+            <button className="btn hero-btn-primary" onClick={handleGetStarted}>Get Started</button>
             <button className="btn hero-btn-secondary">Learn More</button>
           </div>
         </div>

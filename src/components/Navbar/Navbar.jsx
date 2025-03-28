@@ -24,6 +24,10 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const handleGetStarted = () => {
+    window.open('https://docs.google.com/forms/d/e/1FAIpQLSeuum4IQWfUMNuSeKKXUengV6A0yfTrFxfsu2DP7JQPi8jCqQ/viewform', '_blank');
+  };
+
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="container navbar-container">
@@ -38,14 +42,14 @@ const Navbar = () => {
             <li><a href="#home" onClick={toggleMenu}>Home</a></li>
             <li><a href="#about" onClick={toggleMenu}>About</a></li>
             <li><a href="#services" onClick={toggleMenu}>Services</a></li>
-            <li><a href="#projects" onClick={toggleMenu}>Projects</a></li>
-            <li><a href="#team" onClick={toggleMenu}>Team</a></li>
+            <li><a href="#courses" onClick={toggleMenu}>Courses</a></li>
+            {/* <li><a href="#team" onClick={toggleMenu}>Team</a></li> */}
             <li><a href="#contact" onClick={toggleMenu}>Contact</a></li>
           </ul>
         </div>
 
         <div className="navbar-button">
-          <button className="btn">Get Started</button>
+          <button className="btn" onClick={handleGetStarted}>Get Started</button>
         </div>
 
         <div className="navbar-toggle" onClick={toggleMenu}>

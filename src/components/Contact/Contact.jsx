@@ -58,8 +58,7 @@ const Contact = () => {
               <div className="info-icon">✉️</div>
               <div className="info-content">
                 <h3>Email Us</h3>
-                <p>info@techzistors.com</p>
-                <p>support@techzistors.com</p>
+                <p>Techzistors@gmail.com</p>
               </div>
             </div>
             

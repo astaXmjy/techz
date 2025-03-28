@@ -10,6 +10,10 @@ import smartManufacturingImg from '../../assets/images/services/smart-manufactur
 import customHardwareImg from '../../assets/images/services/custom-hardware.jpg';
 
 const Services = () => {
+  const handleGetStarted = () => {
+    window.open('https://docs.google.com/forms/d/e/1FAIpQLSeuum4IQWfUMNuSeKKXUengV6A0yfTrFxfsu2DP7JQPi8jCqQ/viewform', '_blank');
+  };
+
   const services = [
     {
       id: 1,
@@ -128,7 +132,7 @@ const Services = () => {
         <div className="services-cta">
           <h3>Ready to transform your technology training and automation needs?</h3>
           <p>Contact us today to discuss how our specialized services can help you achieve your goals in industrial automation, IoT, and robotics.</p>
-          <button className="btn services-btn">Get Started</button>
+          <button className="btn services-btn" onClick={handleGetStarted}>Get Started</button>
         </div>
       </div>
     </section>
